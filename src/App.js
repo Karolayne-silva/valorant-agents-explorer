@@ -6,30 +6,27 @@ import lupa from "./img/icone-lupa.svg";
 import Footer from "./componentes/Footer";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [datas, setData] = useState([]);
   const [initialData, setInitialData] = useState([]);
 
   useEffect(() => {
-    fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")
-      .then((response) => response.json())
-      .then((json) => setData(json.data));
-    setInitialData(data);
+    async function fetchApi(){
+      const response = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true");
+      const json = await response.json();
+      setData(json.data)
+      setInitialData(json.data);
+    }
+    fetchApi()
   }, []);
-
-  /*  console.log(initialRepo);
-  function buscaFiltro(valor) {
-    const filter = data.filter((agente) => agente.displayName.toLowerCase().startsWith(valor.toLowerCase()));
-    setData(filter);
-  } */
 
   function handleChange(event) {
     const valor = event.target.value;
     if (!valor) {
       setData(initialData);
-      
+      return;
     }
 
-    const filterData = data.filter((agente) =>
+    const filterData = datas.filter((agente) =>
       agente.displayName.toLowerCase().includes(valor.toLowerCase())
     );
     setData(filterData);
@@ -53,7 +50,7 @@ function App() {
           </div>
         </form>
       </div>
-      {data && <Agents dado={data} />}
+      {datas && <Agents dado={datas} />}
       <Footer />
     </div>
   );
