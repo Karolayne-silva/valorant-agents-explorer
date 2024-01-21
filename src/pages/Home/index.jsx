@@ -4,6 +4,7 @@ import valorant from "../../img/nome valorant.png";
 import lupa from "../../img/icone-lupa.svg";
 import Header from "../../componentes/Header/Header";
 import Footer from "../../componentes/Footer/Footer";
+import "../Home/home.css";
 
 
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="main">
+      <div className="main-home">
         <img src={valorant} alt="nome valorant" />
 
         <form>

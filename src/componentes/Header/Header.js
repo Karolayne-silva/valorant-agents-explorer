@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import iconValorant from "../../img/icon-valorant.png";
+import "../Header/header.css";
 
 export default function Header() {
   return (
