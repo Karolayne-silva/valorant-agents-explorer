@@ -1,0 +1,131 @@
+.main {
+  display: grid;
+  grid-template-columns: auto 2fr 1fr;
+  gap: 0px;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+}
+.fundo-titulo {
+  background-color: #fff;
+  width: 80px;
+  height: 100%;
+  margin: 0px 20px;
+  grid-row: 1/-4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fundo-titulo h1 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 4rem;
+}
+.role {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  align-items: center;
+  margin-top: 40px;
+}
+.info-agente p {
+  color: #fff;
+  max-width: 45ch;
+  font-size: 1.7rem;
+}
+.role img {
+  width: 80px;
+  height: 80px;
+}
+.role span {
+  font-size: 1.5rem;
+}
+.role span:hover{
+    color: #ff4655;
+}
+
+.cardHabilidade {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  padding: 10px;
+  position: relative;
+  height: 400px;
+  width: 300px;
+  border-right: 1px solid #ff4655;
+  color: #fff;
+}
+.cardHabilidade .nome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardHabilidade .nome img {
+  width: 70px;
+  height: 70px;
+}
+.cardHabilidade .nome h1 {
+  font-weight: 400;
+  
+}
+.cardHabilidade .descricao p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  text-align: justify;
+}
+.cardHabilidade:nth-child(4) {
+  border: none;
+}
+.cardHabilidade .letra {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #ff4655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -25px;
+  right: 20px;
+  font-size: 1.125rem;
+}
+.habilidades {
+  display: flex;
+  flex-direction: row;
+  grid-column: -3/-1;
+  margin-top: 140px;
+}
+.paleta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
+.paleta div {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.imgs {
+  position: relative;
+  display: flex;
+}
+.img-agente {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+.img-agente img {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+.info-agente {
+  margin-top: 20px;
+}
