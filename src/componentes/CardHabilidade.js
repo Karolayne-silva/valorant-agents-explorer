@@ -1,13 +1,13 @@
-import img from "../img/image 30.png";
-export default function CardHabilidade(){
+
+export default function CardHabilidade({img, nome, descricao}){
     return(
         <div className="cardHabilidade">
             <div className="nome">
                 <img src={img} alt=""/>
-                <h1>Wingonn</h1>
+                <h1>{nome}</h1>
             </div>
             <div className="descricao">
-                <p>EQUIPE Wingman. DISPARE para enviá-lo para encontrar inimigos. Wingman lança uma forte explosão na direção do primeiro inimigo que vê. Use o DISPARO ALTERNATIVO na direção de um ponto ou Spike plantada para que Wingman plante ou desarme a Spike. Para plantar, Gekko deve estar com a Spike no inventário. Quando Wingman expira, ele se transforma em um glóbulo inativo. INTERAJA para recuperar o glóbulo e ganhar outra carga de Wingman após um curto período.</p>
+                <p>{descricao}</p>
             </div>
             <span className="letra">C</span>
         </div>

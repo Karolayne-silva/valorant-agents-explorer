@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import imgValorant from "../img/image 4.png";
-export default function Agente({ nome, imgAgente, background }) {
+export default function Agente({ nome, imgAgente, background, id }) {
   return (
     <div className="cardAgente">
 
       <div className="overlay">
-        <Link to="/agente" className="btn-overlay">
+        <Link to={`/agente/${id}`} className="btn-overlay">
           <img src={imgValorant} />
         </Link>
         <p>Mais</p>
