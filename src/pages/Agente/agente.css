@@ -32,6 +32,7 @@
   color: #fff;
   max-width: 45ch;
   font-size: 1.7rem;
+  
 }
 .role img {
   width: 80px;
@@ -107,6 +108,9 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+.paleta div:hover{
+  transform: scale(0.8);
 }
 .imgs {
   position: relative;

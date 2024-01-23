@@ -46,15 +46,15 @@
   overflow: hidden;
 }
 .imgAgente .img1 {
-  width: 315px;
+  max-width: 100%;
   height: 315px;
   position: absolute;
   bottom: 0px;
-  left: -25px;
+  left: -5px;
   z-index: 1;
 }
 .imgAgente .img2 {
-  width: 250px;
+  width: 100%;
   height: 250px;
   opacity: 0.4;
 }
@@ -64,6 +64,7 @@
 .cardAgente:hover {
   border-bottom: 0.1px solid #9a9a9a;
 }
+
 .overlay {
   position: absolute;
   border-radius: 20px;
@@ -81,22 +82,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+ }
+
 .overlay:hover {
   opacity: 1;
 }
 
 .btn-overlay {
   background-color: transparent;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 1;
   border: none;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.overlay:hover .btn-overlay {
+/* .overlay:hover .btn-overlay {
   opacity: 1;
-}
+} */
 .btn-overlay img {
   width: 60px;
   height: 60px;
@@ -135,4 +139,29 @@
 .main-home form div img {
   width: 25px;
   height: 25px;
+}
+
+@media (max-width: 600px) {
+  .main-home{
+    gap: 50px;
+    padding-top: 50px;
+  }
+  .main-home img {
+    width: 270px;
+  }
+  .main-home form {
+    gap: 5px;
+  }
+  .main-home form input {
+    width: 245px;
+    height: 40px;
+  }
+  .main-home form div {
+    width: 40px;
+    height: 42px;
+  }
+  .main-home form div img {
+    width: 23px;
+    height: 23px;
+  }
 }

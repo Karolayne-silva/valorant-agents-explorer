@@ -7,8 +7,9 @@ export default function Agente({ nome, imgAgente, background, id }) {
       <div className="overlay">
         <Link to={`/agente/${id}`} className="btn-overlay">
           <img src={imgValorant} />
+          <p>Mais</p>
         </Link>
-        <p>Mais</p>
+        
       </div>
       
       <div className="imgAgente">

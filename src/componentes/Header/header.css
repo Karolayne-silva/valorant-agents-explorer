@@ -1,10 +1,12 @@
 #header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   padding-left: 40px;
   margin-bottom: 10px;
   font-family: "Bebas Neue", sans-serif;
+}
+.header-flex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #header img {
@@ -17,4 +19,19 @@
   text-transform: uppercase;
   font-size: 1.5625rem;
   font-weight: 400;
+}
+@media (max-width: 600px) {
+  #header {
+    padding-left: 20px;
+  }
+  #header img {
+    width: 40px;
+    height: 40px;
+  }
+  #header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5625rem;
+    font-weight: 400;
+  }
 }
