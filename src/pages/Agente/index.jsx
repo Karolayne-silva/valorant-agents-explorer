@@ -10,7 +10,7 @@ export default function Agente() {
   const [dataAgente, setDataAgente] = useState([]);
 
   console.log(id);
-  
+
   useEffect(() => {
     async function fetchApi() {
       try {
@@ -26,7 +26,7 @@ export default function Agente() {
     fetchApi();
   }, [id]);
 
-  const letras = ['C', 'Q', 'E', 'X'];
+  const letras = ["C", "Q", "E", "X"];
   return (
     <>
       <Header />
@@ -47,27 +47,24 @@ export default function Agente() {
           <div className="img-agente">
             <img src={dataAgente?.fullPortrait} alt="" />
             <div className="paleta">
-              {dataAgente?.backgroundGradientColors?.map((cor, index) => (
-                <div key={index} style={{ backgroundColor: `#${cor}` }}></div>
-              ))}
-            </div>
+            {dataAgente?.backgroundGradientColors?.map((cor, index) => (
+              <div key={index} style={{ backgroundColor: `#${cor}` }}></div>
+            ))}
           </div>
+          </div>
+          
         </section>
 
         <section className="habilidades">
-
-          {
-          dataAgente?.abilities
+          {dataAgente?.abilities
             ?.filter((habilidade) => habilidade.slot !== "Passive")
             .map((habilidade, index) => (
-              
               <CardHabilidade
                 key={index}
                 img={habilidade.displayIcon}
                 nome={habilidade.displayName}
                 descricao={habilidade.description}
                 letra={letras[index]}
-               
               />
             ))}
         </section>
