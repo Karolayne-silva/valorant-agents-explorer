@@ -2,7 +2,7 @@
   font-family: "Bebas Neue", sans-serif;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   gap: 10px;
   width: 100%;
 }
