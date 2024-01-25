@@ -20,6 +20,17 @@
   border-bottom: 0.1px solid #ff4655;
   position: relative;
 }
+.card-skeleton{
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  width: 250px;
+  height: 300px;
+  border: 0.1px solid #9a9a9a;
+}
+.skeleton-img{
+  height: 250px;
+}
 .fundoTitulo {
   background-color: #ff4655;
   position: absolute;
@@ -35,13 +46,14 @@
   left: 10px;
   font-weight: 400;
 }
-.listaAgentes {
+.listaAgentes, .cards-skeleton {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 20px;
   justify-content: center;
   align-items: center;
 }
+
 .imgAgente {
   overflow: hidden;
 }
@@ -98,9 +110,6 @@
   align-items: center;
 }
 
-/* .overlay:hover .btn-overlay {
-  opacity: 1;
-} */
 .btn-overlay img {
   width: 60px;
   height: 60px;

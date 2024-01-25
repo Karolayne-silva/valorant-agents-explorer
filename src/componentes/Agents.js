@@ -1,8 +1,10 @@
 import CardAgente from "./CardAgente";
 
+
 export default function Agente({dado}) {
   return (
     <div className="listaAgentes">
+      
       {dado.map((agente) => (
         <CardAgente
           key={agente.uuid}

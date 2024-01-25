@@ -5,13 +5,17 @@ import lupa from "../../img/icone-lupa.svg";
 import Header from "../../componentes/Header/Header";
 import Footer from "../../componentes/Footer/Footer";
 import "../Home/home.css";
+import CardSkeleton from "../../componentes/CardSkeleton";
+
 
 
 export default function Home() {
   const [datas, setData] = useState([]);
   const [initialData, setInitialData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+
     async function fetchApi() {
       const response = await fetch(
         "https://valorant-api.com/v1/agents?isPlayableCharacter=true"
@@ -19,6 +23,7 @@ export default function Home() {
       const json = await response.json();
       setData(json.data);
       setInitialData(json.data);
+      setIsLoading(false)
     }
     fetchApi();
   }, []);
@@ -54,7 +59,8 @@ export default function Home() {
           </div>
         </form>
       </div>
-      {datas && <Agents dado={datas} />}
+      {isLoading && <CardSkeleton />}
+      {!isLoading && datas && <Agents dado={datas} />}
       <Footer />
     </>
   );
