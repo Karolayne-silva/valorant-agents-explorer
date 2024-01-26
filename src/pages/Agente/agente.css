@@ -1,4 +1,3 @@
-
 .main {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
@@ -16,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .fundo-titulo h1 {
   writing-mode: vertical-rl;
@@ -28,10 +26,8 @@
   gap: 20px;
   color: #fff;
   align-items: center;
-
 }
 .info-agente {
-
   display: flex;
   flex-direction: column;
 }
@@ -61,7 +57,6 @@
   width: 300px;
   border-right: 1px solid #ff4655;
   color: #fff;
-  
 }
 .cardHabilidade .nome {
   display: flex;
@@ -101,7 +96,6 @@
   display: flex;
   flex-direction: row;
   grid-column: -3/-1;
- 
 }
 .imgs {
   display: flex;
@@ -113,7 +107,6 @@
   height: 380px;
   width: 380px;
   position: relative;
- 
 }
 .paleta {
   display: flex;
@@ -122,7 +115,6 @@
   position: absolute;
   top: 170px;
   left: 40px;
-
 }
 .paleta div {
   width: 40px;
@@ -142,14 +134,13 @@
 .info-agente {
   margin-top: 20px;
 }
-@media (min-width: 1300px){
+@media (min-width: 1300px) {
   .img-agente img {
     left: 250px;
   }
   .paleta {
     top: 120px;
     left: 270px;
-  
   }
 }
 @media (max-width: 1200px) {
@@ -164,7 +155,7 @@
     border: none;
   }
 }
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .main {
     display: grid;
     grid-template-columns: 1fr;
@@ -177,20 +168,17 @@
     margin: 0px 0px 0px 0px;
     grid-row: 0;
     grid-column: -3/-1;
-
   }
-  .fundo-titulo h1{
+  .fundo-titulo h1 {
     writing-mode: horizontal-tb;
     transform: none;
   }
   .info-agente {
-   
     grid-column: -3/-1;
     justify-content: center;
     align-items: center;
   }
   .imgs {
-    
     width: initial;
     grid-column: -3/-1;
     grid-row: 1;
@@ -199,12 +187,12 @@
     height: 400px;
     width: 400px;
   }
-  .habilidades{
+  .habilidades {
     justify-content: center;
     align-items: center;
     gap: 20px 0px;
   }
-  .role{
+  .role {
     margin-bottom: 25px;
   }
   .role img {
@@ -219,12 +207,18 @@
     left: 20px;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 836px) {
+  .cardHabilidade {
+    border: none;
+  }
+}
+
+@media (max-width: 600px) {
   .cardHabilidade {
     height: 385px;
     width: 90%;
   }
-  .fundo-titulo h1{
+  .fundo-titulo h1 {
     writing-mode: horizontal-tb;
     transform: none;
     font-size: 3rem;
@@ -232,22 +226,22 @@
   .cardHabilidade {
     border: none;
   }
-  .habilidades{
+  .habilidades {
     gap: 25px 0px;
   }
   .info-agente p {
     font-size: 1.3rem;
     text-align: justify;
   }
-  
+
   .role img {
     width: 40px;
     height: 40px;
   }
   .role span {
     font-size: 1.3rem;
-
-  }.img-agente {
+  }
+  .img-agente {
     display: flex;
     height: 330px;
     width: 350px;

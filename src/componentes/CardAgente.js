@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import imgValorant from "../img/image 4.png";
-export default function Agente({ nome, imgAgente, background, id }) {
+export default function Agente({ nome, imgAgente, background, id}) {
+
   return (
     <div className="cardAgente">
 

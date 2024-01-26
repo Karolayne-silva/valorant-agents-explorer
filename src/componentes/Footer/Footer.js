@@ -4,7 +4,7 @@ export default function Footer() {
     <div className="footer" >
       <p>
         © 2024 |{" "}
-        <a href="https://github.com/Karolayne-silva">Karolayne Silva</a>
+        <a href="https://github.com/Karolayne-silva" target="blank">Karolayne Silva</a>
       </p>
     </div>
   );
