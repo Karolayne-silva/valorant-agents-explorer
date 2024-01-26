@@ -40,7 +40,6 @@ export default function Home() {
     );
     setData(filterData);
   }
-
   return (
     <>
       <Header />
@@ -59,8 +58,8 @@ export default function Home() {
           </div>
         </form>
       </div>
-      {isLoading && <CardSkeleton />}
-      {!isLoading && datas && <Agents dado={datas} />}
+      {isLoading && !datas.length ? <CardSkeleton/> : <Agents dado={datas} />}
+      
       <Footer />
     </>
   );
