@@ -44,7 +44,7 @@ export default function Home() {
     <>
       <Header />
       <div className="main-home">
-        <img src={valorant} alt="nome valorant" />
+        <img src={valorant} alt="nome valorant" width="900" height="130"/>
 
         <form>
           <input
