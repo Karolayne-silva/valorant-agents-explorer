@@ -8,7 +8,7 @@ export default function Header() {
       <Link to="/">
         <img src={iconValorant} alt="icone do valorant" />
       </Link>
-      <h1>agents</h1>
+      <h1>agents Explorer</h1>
     </div>
   );
 }
