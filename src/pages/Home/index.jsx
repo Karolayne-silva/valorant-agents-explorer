@@ -54,7 +54,7 @@ export default function Home() {
             onChange={handleChange}
           />
           <div>
-            <img src={lupa} />
+            <img src={lupa} alt="icone de lupa"/>
           </div>
         </form>
       </div>
