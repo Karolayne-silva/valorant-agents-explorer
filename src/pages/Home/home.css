@@ -10,6 +10,8 @@
 
 .main-home img {
   width: 600px;
+  height: auto;
+
 }
 .cardAgente {
   width: 250px;
@@ -158,6 +160,8 @@
   }
   .main-home img {
     width: 270px;
+    height: auto;
+    
   }
   .main-home form {
     gap: 5px;
