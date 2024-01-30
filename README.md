@@ -1,7 +1,8 @@
 # Valorant Agents Explorer 
 O Valorant Agents Explorer é um projeto React que utiliza a API do Valorant para fornecer informações detalhadas sobre os agentes do jogo Valorant.
 
-![image](https://github.com/Karolayne-silva/valorant-agent-explorer/assets/96891482/81318139-b048-48d1-acb3-eb0f9d0800f3)
+![image](https://github.com/Karolayne-silva/valorant-agent-explorer/assets/96891482/de5097ba-30a3-4db9-9659-af4c12c65a95)
+
 
 
 ## Tecnologias Utilizadas
