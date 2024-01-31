@@ -31,28 +31,32 @@ export default function Agente() {
     <>
       <Header />
       <main className="main">
-        <section className="fundo-titulo">
+        <header className="fundo-titulo">
           <h1>{dataAgente?.displayName}</h1>
-        </section>
+        </header>
 
         <section className="info-agente">
           <p>{dataAgente?.description}</p>
           <div className="role">
-            <img src={dataAgente?.role?.displayIcon} alt="" />
+            <img src={dataAgente?.role?.displayIcon} alt="icone" />
             <span>{dataAgente?.role?.displayName}</span>
           </div>
         </section>
 
         <section className="imgs">
           <div className="img-agente">
-            <img src={dataAgente?.fullPortrait} alt="" />
             <div className="paleta">
-            {dataAgente?.backgroundGradientColors?.map((cor, index) => (
-              <div key={index} style={{ backgroundColor: `#${cor}` }}></div>
-            ))}
+              {dataAgente?.backgroundGradientColors?.map((cor, index) => (
+                <div key={index} style={{ backgroundColor: `#${cor}` }}></div>
+              ))}
+            </div>
+            <img
+              src={dataAgente?.fullPortrait}
+              alt="imagem do agente"
+              width="803"
+              height="729"
+            />
           </div>
-          </div>
-          
         </section>
 
         <section className="habilidades">
