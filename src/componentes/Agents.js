@@ -5,6 +5,7 @@ export default function Agente({ dado }) {
     <div className="listaAgentes">
       {dado.map((agente, index) => (
         <CardAgente
+          card={agente.displayIconSmall}
           key={agente.uuid}
           nome={agente.displayName}
           imgAgente={agente.bustPortrait}
